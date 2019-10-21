@@ -37,6 +37,8 @@ def test_list_rng():
         lr.rand()
 
 
+
+
 def test_walker():
     """Test that Walker class can be used as required."""
 
