@@ -29,11 +29,6 @@ class LCGRand:
         return self.lcg_value
 
 
-a = LCGRand(348)
-print(a.rand())
-print(a.rand())
-
-
 class ListRand:
 
     def __init__(self, list_of_numbers):
@@ -42,7 +37,7 @@ class ListRand:
         return
 
     def rand(self):
-        """ Returns the first number of inputed list, then second number if
+        """ Returns the first number of input list, then second number if
         called twice, and third if called thrice etc."""
         if self.counter > len(self.numbers) - 1:
             raise RuntimeError
@@ -52,3 +47,14 @@ class ListRand:
 
         return number
 
+
+if __name__ == '__main__':
+
+    test_lcg = LCGRand(500)
+    print(test_lcg.rand())
+    print(test_lcg.rand())
+    print(test_lcg.rand())
+
+    test_list_rand = ListRand([1, 2, 3, 4])
+    print(test_list_rand.rand())
+    print(test_list_rand.rand())
