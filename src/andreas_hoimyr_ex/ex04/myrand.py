@@ -9,33 +9,46 @@ class LCGRand:
 
     def __init__(self, seed):
         self.counter = 0
-        self.lcg_list = [seed]
+        self.lcg_value = seed
         return
 
     def rand(self):
-
-        self.lcg_list.append(0)
+        """Returns the value given by formula of random values. The formula
+        is constant and does not change.
+        source:
+        https://github.com/yngvem/INF200-2019-Exercises/blob/master/
+        exersices/ex04.rst
+        """
 
         lcg_constant = 7**5
         limit_value = 2**31-1
 
-        self.lcg_list[self.counter + 1] = lcg_constant * self.lcg_list[
-            self.counter] % limit_value
-
+        self.lcg_value = lcg_constant * self.lcg_value % limit_value
         self.counter += 1
 
-        return self.lcg_list[self.counter]
+        return self.lcg_value
 
 
 a = LCGRand(348)
 print(a.rand())
 print(a.rand())
 
+
 class ListRand:
 
-    def __init__(self):
-        pass
+    def __init__(self, list_of_numbers):
+        self.numbers = list_of_numbers
+        self.counter = 0
+        return
 
     def rand(self):
-        pass
+        """ Returns the first number of inputed list, then second number if
+        called twice, and third if called thrice etc."""
+        if self.counter > len(self.numbers) - 1:
+            raise RuntimeError
+
+        number = self.numbers[self.counter]
+        self.counter += 1
+
+        return number
 
