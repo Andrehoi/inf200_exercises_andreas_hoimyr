@@ -2,6 +2,4 @@
 
 ANDREAS SANDVIK HOIMYR:
 
-
-This is a substitute repository due to problems 
-using pytest in the main exercise repository.
+Exercise repository for inf200 fall 2019
