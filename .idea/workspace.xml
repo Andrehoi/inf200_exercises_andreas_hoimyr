@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65f5ddb8-fe5b-4dc1-a335-9e7139747f13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05/bounded_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05/bounded_sim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05/myrand.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05/myrand.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05/walker_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05/walker_sim.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_ex05.py">
+  <component name="RunManager" selected="Python.bounded_sim">
     <configuration name="bounded_sim" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="inf200_exercises_andreas_hoimyr" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,8 +160,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.myrand" />
         <item itemvalue="Python.bounded_sim" />
+        <item itemvalue="Python.myrand" />
         <item itemvalue="Python.walker_sim" />
         <item itemvalue="Python.test_ex05" />
       </list>
@@ -181,7 +179,7 @@
       <updated>1571650174927</updated>
       <workItem from="1571650178870" duration="14756000" />
       <workItem from="1571912903888" duration="193000" />
-      <workItem from="1572788226423" duration="13187000" />
+      <workItem from="1572788226423" duration="13302000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit from pycharm">
       <created>1571651009190</created>
@@ -261,7 +259,13 @@
       <option name="presentableId" value="LOCAL−00013" />
       <updated>1572801344230</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL−00014" summary="Finished myrand for ex05">
+      <created>1572803416610</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1572803416610</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,16 +298,17 @@
     <MESSAGE value="error corrections in walker_sim" />
     <MESSAGE value="finished bounded_sim" />
     <MESSAGE value="finished bounded sim" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished bounded sim" />
+    <MESSAGE value="Finished myrand for ex05" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished myrand for ex05" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$pytest_in_test_ex05_py.coverage" NAME="pytest in test_ex05.py Coverage Results" MODIFIED="1572803400803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$pytest_in_test_ex05_py.coverage" NAME="pytest in test_ex05.py Coverage Results" MODIFIED="1572803489058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$walker.coverage" NAME="walker Coverage Results" MODIFIED="1571821913933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex04" />
     <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$pytest_in_test_ex04_py.coverage" NAME="pytest in test_ex04.py Coverage Results" MODIFIED="1571912570179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$test_ex04.coverage" NAME="test_ex04 Coverage Results" MODIFIED="1571650579095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex04" />
     <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$test_ex05.coverage" NAME="test_ex05 Coverage Results" MODIFIED="1572788364115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05" />
-    <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$bounded_sim.coverage" NAME="bounded_sim Coverage Results" MODIFIED="1572801284275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05" />
     <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$myrand.coverage" NAME="myrand Coverage Results" MODIFIED="1572803394672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05" />
+    <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$bounded_sim.coverage" NAME="bounded_sim Coverage Results" MODIFIED="1572803510787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05" />
     <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$walker_sim.coverage" NAME="walker_sim Coverage Results" MODIFIED="1572799838714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05" />
   </component>
 </project>
