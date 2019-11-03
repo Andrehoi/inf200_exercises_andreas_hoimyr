@@ -41,10 +41,12 @@ class Walker:
         return self.count_steps
 
 
-class Simulation(Walker):
+class Simulation:
 
     def __init__(self, samfunnet_position, home_position, seed):
-        super().__init__(samfunnet_position, home_position)
+        self.start = samfunnet_position
+        self.home = home_position
+        self.seed = random.seed(seed)
         """
         Initialise the simulation
         """
@@ -54,10 +56,13 @@ class Simulation(Walker):
         Simulate single walk from start to home, returning number of steps.
 
         """
-        while not super().is_at_home():
-            super().move()
 
-        return super().get_steps()
+        walker = Walker(self.start, self.home)
+
+        while not walker.is_at_home():
+            walker.move()
+
+        return walker.get_steps()
 
     def run_simulation(self, num_walks):
         """
@@ -66,25 +71,20 @@ class Simulation(Walker):
         """
         walk_list = []
         for _ in range(num_walks):
-
-            while not super().is_at_home():
-                super().move()
-
-            walk_list.append(super().get_steps())
+            walk_list.append(self.single_walk())
 
         return walk_list
 
 
 if __name__ == '__main__':
 
-    simulation_one = Simulation(0, 10, 12345)
-    simulation_two = Simulation(10, 0, 12345)
-    simulation_three = Simulation(0, 10, 54321)
-    simulation_four = Simulation(10, 0, 54321)
-
     for _ in range(2):
+        simulation_one = Simulation(0, 10, 12345)
+        simulation_two = Simulation(10, 0, 12345)
         print(simulation_one.run_simulation(20))
         print(simulation_two.run_simulation(20))
 
+    simulation_three = Simulation(0, 10, 54321)
+    simulation_four = Simulation(10, 0, 54321)
     print(simulation_three.run_simulation(20))
     print(simulation_four.run_simulation(20))

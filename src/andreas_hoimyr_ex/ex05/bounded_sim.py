@@ -16,6 +16,23 @@ class BoundedWalker(Walker):
         self.left_limit = left_limit
         self.right_limit = right_limit
 
+    def Bounded(self):
+        """ Moves the student either +1 step or -1 step towards home"""
+        step = random.randint(1, 2)
+        if step == 2:
+            step = -1
+        self.student += step
+        if self.student < self.left_limit:
+            self.student = self.left_limit
+
+        if self.student > self.right_limit:
+            self.student = self.right_limit
+
+        self.count_steps += 1
+
+        return
+
+
 
 class BoundedSimulation(Simulation):
 
@@ -26,3 +43,6 @@ class BoundedSimulation(Simulation):
         self.left_limit = left_limit
         self.right_limit = right_limit
 
+
+    def bounded_run(self):
+        pass
