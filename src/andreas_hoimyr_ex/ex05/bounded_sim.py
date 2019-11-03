@@ -26,6 +26,3 @@ class BoundedSimulation(Simulation):
         self.left_limit = left_limit
         self.right_limit = right_limit
 
-
-if __name__ == '__main__':
-
