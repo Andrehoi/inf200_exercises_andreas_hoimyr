@@ -56,7 +56,7 @@ class BoundedSimulation(Simulation):
 
         walk_list = []
         for _ in range(num_walks):
-            walk_list.append(self.bounded_runs(num_walks))
+            walk_list.append(self.bounded_sims(num_walks))
 
         return walk_list
 
@@ -64,7 +64,7 @@ class BoundedSimulation(Simulation):
 if __name__ == '__main__':
 
     left_boundary = [0, -10, -100, -1000, -10000]
-    seed = 7
+    seed = 0
 
     for boundary in left_boundary:
         bound_sim = BoundedSimulation(0, 20, seed, boundary, 20)
