@@ -11,13 +11,51 @@ class RandIter:
         self.generator = random_number_generator
         self.length = length
         self.num_generated_numbers = None
-        return
 
     def __iter__(self):
-        pass
+        """
+        Initialise the iterator.
+
+        Returns
+        -------
+        self : RandIter
+
+        Raises
+        ------
+        RuntimeError
+            If iter is called twice on the same RandIter object.
+        """
+        if self.num_generated_numbers is not None:
+            raise RuntimeError
+
+        self.num_generated_numbers = 0
+        return self
 
     def __next__(self):
-        pass
+        """
+        Generate the next random number.
+
+        Returns
+        -------
+        int
+            A random number.
+
+        Raises
+        ------
+        RuntimeError
+            If the ``__next__`` method is called before ``__iter__``.
+        StopIteration
+            If ``self.length`` random numbers are generated.
+        """
+        if self.num_generated_numbers is None:
+            raise RuntimeError
+
+        if self.num_generated_numbers == self.length:
+            raise StopIteration
+
+        self.num_generated_numbers += 1
+
+        return self.generator.rand()
 
 
 class LCGRand:
@@ -45,4 +83,27 @@ class LCGRand:
         return RandIter(self, length)
 
     def infinite_random_sequence(self):
-        pass
+        """
+        Generate an infinite sequence of random numbers.
+
+        Yields
+        ------
+        int
+            A random number.
+        """
+        while True:
+            yield self.rand()
+
+
+if __name__ == '__main__':
+
+    generator = LCGRand(1)
+    for rand in generator.random_sequence(10):
+        print(rand)
+
+    i = 0
+    while i < 100:
+        rand = generator.infinite_random_sequence()
+        print(f'The {i}-th random number is {next(rand)}')
+
+        i += 1

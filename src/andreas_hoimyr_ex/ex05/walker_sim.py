@@ -15,8 +15,6 @@ class Walker:
         self.home = home_position
         self.count_steps = 0
 
-        return
-
     def move(self):
         """ Moves the student either +1 step or -1 step towards home"""
         step = random.randint(1, 2)

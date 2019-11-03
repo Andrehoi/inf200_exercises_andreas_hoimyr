@@ -39,7 +39,6 @@ class BoundedSimulation(Simulation):
     def __init__(self, samfunnet_position, home_position, seed, left_limit,
                  right_limit):
         super().__init__(samfunnet_position, home_position, seed)
-
         self.left = left_limit
         self.right = right_limit
 
