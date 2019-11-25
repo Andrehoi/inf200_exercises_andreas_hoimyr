@@ -47,8 +47,7 @@ def predict_proba(coef, X):
     p : np.ndarray(shape(n,))
         The predicted class probabilities.
     """
-    z = X@coef
-    return sigmoid(z)
+    return sigmoid(X@coef)
 
 
 def logistic_gradient(coef, X, y):
@@ -120,7 +119,7 @@ class LogisticRegression(BaseEstimator, ClassifierMixin):
         self.tol = tol
         self.learning_rate = learning_rate
         self.random_state = random_state
-        self.coef = 0
+        self.counter = 0
 
     def _fit_gradient_descent(self, coef, X, y):
         """
@@ -138,32 +137,22 @@ class LogisticRegression(BaseEstimator, ClassifierMixin):
         coef : np.ndarray(shape=(n,))
             The logistic regression weights
         """
+
         counter = 0
-        coef_old = coef
+        while True:
+            coef = coef - self.learning_rate*logistic_gradient(coef, X, y)
 
-        while counter < self.max_iter:
-            coef_new = coef_old - self.learning_rate*logistic_gradient(
-                coef_old, X, y)
+            if self._has_converged(coef, X, y):
+                print('Converged after {0}'.format(counter))
+                return coef
 
-            if self._has_converged(coef_new, X, y):
-                return coef_new
+            if counter == self.max_iter:
+                return coef
 
             counter += 1
-            coef_old = coef_new
-
-            print(counter)
-        return coef_new
 
     def _has_converged(self, coef, X, y):
-        r"""Whether the gradient descent algorithm has converged.
-        Returns True if the norm of the gradient is smaller than ``self.tol``,
-        mathematically, that is
-        .. math::
-            ||\nabla_w L(\mathbf{w}^{(k)}; X, \mathbf{y})|| < T
-        where :math:`\nabla_w L` is the gradient of the loss function,
-        :math:`|| \mathbf{v} ||` is the norm of the vector :math:`\mathbf{v}`,
-        :math:`\mathbf{w}^{(k)}` is the weights at iteration ``k``, and
-        :math:`T` is the convergence tolerance (``self.tol``).
+        """
         Parameters
         ----------
         coef : np.ndarray(shape=(r,))
@@ -177,6 +166,7 @@ class LogisticRegression(BaseEstimator, ClassifierMixin):
         has_converged : bool
             True if the convergence criteria above is met, False otherwise.
         """
+
         return np.linalg.norm(logistic_gradient(coef, X, y)) < self.tol
 
     def fit(self, X, y):
@@ -261,8 +251,10 @@ if __name__ == "__main__":
     y = predict_proba(coef, X) > 0.5
 
     # Fit a logistic regression model to the X and y vector
-    lr_model = LogisticRegression()
+    lr_model = LogisticRegression(max_iter=1000, tol=10,
+                                  learning_rate=0.00001)
     lr_model.fit(X, y)
+
     # Create a logistic regression object and fit it to the dataset
 
     # Print performance information
