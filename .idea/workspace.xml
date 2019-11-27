@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="65f5ddb8-fe5b-4dc1-a335-9e7139747f13" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05/bounded_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05/bounded_sim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex06/logistic_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex06/logistic_regression.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +46,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bounded_sim">
-    <configuration name="bounded_sim" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.logistic_regression">
+    <configuration name="logistic_regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="inf200_exercises_andreas_hoimyr" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -55,12 +55,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex06" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05/bounded_sim.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex06/logistic_regression.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -69,73 +69,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="myrand" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="inf200_exercises_andreas_hoimyr" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05/myrand.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_ex05" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="inf200_exercises_andreas_hoimyr" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05/test_ex05.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="walker_sim" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="inf200_exercises_andreas_hoimyr" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05/walker_sim.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_ex05.py" type="tests" factoryName="py.test" nameIsGenerated="true">
+    <configuration name="pytest in test_logistic_regression.py" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="inf200_exercises_andreas_hoimyr" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,23 +81,17 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05/test_ex05.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/andreas_hoimyr_ex/ex06/test_logistic_regression.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test_ex05" />
-      <item itemvalue="Python.walker_sim" />
-      <item itemvalue="Python.myrand" />
-      <item itemvalue="Python.bounded_sim" />
-      <item itemvalue="Python tests.pytest in test_ex05.py" />
+      <item itemvalue="Python.logistic_regression" />
+      <item itemvalue="Python tests.pytest in test_logistic_regression.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.bounded_sim" />
-        <item itemvalue="Python.myrand" />
-        <item itemvalue="Python.walker_sim" />
-        <item itemvalue="Python.test_ex05" />
+        <item itemvalue="Python.logistic_regression" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +108,7 @@
       <workItem from="1571650178870" duration="14756000" />
       <workItem from="1571912903888" duration="193000" />
       <workItem from="1572788226423" duration="13302000" />
+      <workItem from="1574328823651" duration="23426000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit from pycharm">
       <created>1571651009190</created>
@@ -265,7 +194,25 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1572803416610</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="Created folder for ex06. Created the two python-files and imported code from inf200 repository on github.">
+      <created>1574330184292</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1574330184293</updated>
+    </task>
+    <task id="LOCAL−00016" summary="Further work on logisitc_regression file">
+      <created>1574435303925</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1574435303926</updated>
+    </task>
+    <task id="LOCAL−00017" summary="Tried to imporve the gradient-cresent function">
+      <created>1574673370828</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1574673370828</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,12 +246,18 @@
     <MESSAGE value="finished bounded_sim" />
     <MESSAGE value="finished bounded sim" />
     <MESSAGE value="Finished myrand for ex05" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished myrand for ex05" />
+    <MESSAGE value="Created folder for ex06. Created the two python-files and imported code from inf200 repository on github." />
+    <MESSAGE value="Further work on logisitc_regression file" />
+    <MESSAGE value="Tried to imporve the gradient-cresent function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tried to imporve the gradient-cresent function" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$pytest_in_test_ex05_py.coverage" NAME="pytest in test_ex05.py Coverage Results" MODIFIED="1572803489058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$walker.coverage" NAME="walker Coverage Results" MODIFIED="1571821913933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex04" />
     <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$pytest_in_test_ex04_py.coverage" NAME="pytest in test_ex04.py Coverage Results" MODIFIED="1571912570179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$Doctests_in_test_logistic_regression.coverage" NAME="Doctests in test_logistic_regression Coverage Results" MODIFIED="1574329660163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex06" />
+    <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$logistic_regression.coverage" NAME="logistic_regression Coverage Results" MODIFIED="1574691956306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex06" />
+    <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$pytest_in_test_logistic_regression_py.coverage" NAME="pytest in test_logistic_regression.py Coverage Results" MODIFIED="1574690555861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$test_ex04.coverage" NAME="test_ex04 Coverage Results" MODIFIED="1571650579095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex04" />
     <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$test_ex05.coverage" NAME="test_ex05 Coverage Results" MODIFIED="1572788364115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05" />
     <SUITE FILE_PATH="coverage/inf200_exercises_andreas_hoimyr$myrand.coverage" NAME="myrand Coverage Results" MODIFIED="1572803394672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/andreas_hoimyr_ex/ex05" />
