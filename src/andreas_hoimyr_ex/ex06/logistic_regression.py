@@ -19,8 +19,7 @@ def sigmoid(z):
     r"""Perform a logistic transform on the input.
     This function applies the sigmoidal function element-wise to all
     elements of `z`. The sigmoidal function is on the following form:
-    .. math::
-        \frac{1}{1 + exp(-\mathbf{z})}.
+
     Parameters
     ----------
     z : np.ndarray
@@ -30,13 +29,13 @@ def sigmoid(z):
     sigmoidal_transformed_z : np.ndarray
         Transformed input.
     """
-
-    return 1 / (1 + np.exp(-z))
+    return 1/(1 + np.exp(-z))
 
 
 def predict_proba(coef, X):
-    """
-    Parameters
+    r"""Predict the class probabilities for each data point in :math:`X`.
+    Estimate which class each data point in X corresponds to.
+
     ----------
     coef : np.ndarray(shape=(r,))
         The weight vector, :math:`w`
@@ -51,7 +50,8 @@ def predict_proba(coef, X):
 
 
 def logistic_gradient(coef, X, y):
-    """
+    r"""Returns the gradient of a logistic regression model.
+
     Parameters
     ----------
     coef : np.ndarray(shape=(r,))
@@ -65,13 +65,16 @@ def logistic_gradient(coef, X, y):
     gradient : np.ndarray(shape=(r,))
         The gradient of the cross entropy loss related to the linear
         logistic regression model.
-
     """
-    return (y - predict_proba(coef, X))@X
+    return -(y - predict_proba(coef, X))@X
 
 
 class LogisticRegression(BaseEstimator, ClassifierMixin):
-    """
+    """A logistic regression classifier that follows the scikit-learn API.
+    Note that the ``__init__`` method of scikit-learn estimators should not do
+    any logic or input validation. This is all taken care of in the ``fit``
+    method.
+
     Parameters
     ----------
     max_iter : int (default=1000)
@@ -83,10 +86,10 @@ class LogisticRegression(BaseEstimator, ClassifierMixin):
         The step-size for the gradient descent updates.
     random_state : np.random.random_state or int or None (default=None)
         A numpy random state object or a seed for a numpy random state object.
+
     Attributes
     ----------
-    coef_ : np.ndarray(shape=(r,))
-        The logistic regression weights (initialised in ``self.fit``)
+    coef_ : The logistic regression weights (initialised in ``self.fit``)
     max_iter : int (default=1000)
         Maximum number of gradient descent iterations to run.
     tol : float (default=1e-5)
@@ -101,7 +104,11 @@ class LogisticRegression(BaseEstimator, ClassifierMixin):
     def __init__(
         self, max_iter=1000, tol=1e-5, learning_rate=0.01,
             random_state=None):
-        """
+        """Initialise a logistic regression instance.
+        The ``__init__`` method of scikit-learn estimators should not do any
+        logic or input validation. This is all taken care of in the ``fit``
+        method.
+
         Parameters
         ----------
         max_iter : int (default=1000)
@@ -122,7 +129,9 @@ class LogisticRegression(BaseEstimator, ClassifierMixin):
         self.counter = 0
 
     def _fit_gradient_descent(self, coef, X, y):
-        """
+        r"""Fit the logisitc regression model to the data given initial
+        weights
+
         Parameters
         ----------
         coef : np.ndarray(shape=(r,))
@@ -137,13 +146,12 @@ class LogisticRegression(BaseEstimator, ClassifierMixin):
         coef : np.ndarray(shape=(n,))
             The logistic regression weights
         """
-
         counter = 0
         while True:
             coef = coef - self.learning_rate*logistic_gradient(coef, X, y)
 
             if self._has_converged(coef, X, y):
-                print('Converged after {0}'.format(counter))
+                print('Converged after {0} iterations'.format(counter))
                 return coef
 
             if counter == self.max_iter:
@@ -155,12 +163,9 @@ class LogisticRegression(BaseEstimator, ClassifierMixin):
         """
         Parameters
         ----------
-        coef : np.ndarray(shape=(r,))
-            The weight vector, :math:`\mathbf{w}^{(k)}`
-        X : np.ndarray(shape=(n, r))
-            The data matrix (aka design or measurement matrix)
-        y : np.ndarray(shape=(n,))
-            The true class labels for each data point.
+        coef : The weight vector
+        X : The data matrix (aka design or measurement matrix)
+        y : The true class labels for each data point.
         Returns
         -------
         has_converged : bool
@@ -251,8 +256,7 @@ if __name__ == "__main__":
     y = predict_proba(coef, X) > 0.5
 
     # Fit a logistic regression model to the X and y vector
-    lr_model = LogisticRegression(max_iter=1000, tol=10,
-                                  learning_rate=0.00001)
+    lr_model = LogisticRegression(tol=2)
     lr_model.fit(X, y)
 
     # Create a logistic regression object and fit it to the dataset
